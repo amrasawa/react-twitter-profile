@@ -1,5 +1,5 @@
 import './navbar.css';
-
+import React from 'react';
 import HomeIcon from '@mui/icons-material/Home';
 import PeopleIcon from '@mui/icons-material/People';
 import ArticleIcon from '@mui/icons-material/Article';
@@ -13,11 +13,12 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import NavbarItem from './NavbarItem';
 import Button from './Button';
 import User from './User';
+import { ClassNames } from '@emotion/react';
 //import '../assets/icon.jpeg'
 function Navbar(){
     let srcImg='/icon.jpeg';
     return (
-        <div className='navbar'>
+        <div className='navbar container'>
             <ul className='navbar-list'>
                 <li><XIcon/></li>
                 <NavbarItem icon={<HomeIcon/>} title="Home"/>
@@ -30,9 +31,10 @@ function Navbar(){
                 <NavbarItem icon={<PermIdentityIcon/>} title="Profile"/>
                 <NavbarItem icon={<MoreHorizIcon/>} title="More"/>
             </ul>
-            <Button title="Post"/>
-            <div>
+            <Button className='button post' title="Post"/>
+            <div >
                 <User imgSrc={srcImg} name="AmraSawalha" />
+                <MoreHorizIcon className='user-more'/>
             </div>
         </div>
     )

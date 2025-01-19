@@ -1,5 +1,6 @@
+import React from "react";
 export default function Button({title}){
     return (
-        <button className="button">{title}</button>
+        <button className=" post button" >{title}</button>
     );
 }
