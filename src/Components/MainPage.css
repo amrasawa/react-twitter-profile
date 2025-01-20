@@ -1,0 +1,221 @@
+*{
+    margin:0px;
+}
+
+:root{
+    --main-color:#d4d0d0; 
+}
+
+.main-page{
+    width: calc(100% /(5/3));
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    overflow: hidden;
+    border-right:var(--main-color) solid;
+}
+
+h1{
+    font-size: 16px;
+}
+
+.main-page-header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap:30px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid var(--main-color);
+}
+
+.main-page-header h1{
+    font-weight:900;
+}
+
+.main-page-header span{
+    position: absolute;
+    font-size: 8px;
+    top:25px;
+    left :55px;
+}
+
+.profile{
+    height: 300px;
+    background-image: url('../../public/reactBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: black;
+    font-size:10px;
+    
+}
+
+.gap{
+
+    height: 240px;
+}
+
+.profile-header{
+    /* margin-top:240px; */
+    display: flex;
+    justify-content: space-between;
+    align-self: self-end;
+    
+}
+
+.profile-icons{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+    margin-right:10px;
+    font-weight: 900;
+    /* align-self: self-end; */
+}
+
+.icon{
+    border:solid black 2px;
+    padding:3px;
+    border-radius: 50%;
+}
+
+.following{
+    border-radius: 11px;
+    padding: 5px 12px;
+}
+
+.profile-header img{
+    border: solid white;
+    margin-left:30px;
+    border-radius: 50%;
+
+}
+
+.bio{
+    margin-top: 50px;
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    position: relative;
+}
+
+#username{
+    position: absolute;
+    top:20px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.link{
+    display: flex;
+    align-items:center;
+    gap:5px;
+}
+.link span{
+    color: #3ea9f0;
+}
+
+#date{
+    color:black;
+}
+
+.follow-info{
+    display: flex;
+    gap:5px;
+}
+
+.tabs{
+    border-bottom: solid var(--main-color);
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+}
+
+.post span{
+    font-size: 10px;
+}
+
+.repost{
+    display: flex;
+    gap:5px;
+    margin-left: 10px;
+}
+
+.repost img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.repost-details{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+}
+
+.repost strong{
+    font-size: 10px;
+}
+
+.repost-icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+    padding:10px;
+    border-bottom: solid var(--main-color);
+}
+
+.repost-icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.follow-suggestions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 20px;
+    font-size: small;
+    border-bottom: solid var(--main-color);
+}
+
+.follow-suggestions p{ 
+    font-weight: 600;
+    padding-left: 50px;
+}
+
+.follow{
+    width: calc(100% / 8)
+}
+
+.suggestion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.followed-by{
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-suggestions a{
+    text-transform: none;
+    color:#3ea9f0;
+}
