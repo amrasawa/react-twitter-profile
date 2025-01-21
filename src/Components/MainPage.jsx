@@ -123,7 +123,6 @@ export default function MainPage() {
         </div>
         <a>Show more</a>
       </div>
-
     </div>
   );
 }

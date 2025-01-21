@@ -133,7 +133,7 @@ h1{
     border-bottom: solid var(--main-color);
 }
 
-.post{
+.main-page .post{
     display: flex;
     flex-direction: column;
     gap:10px;

@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   width: calc(100% / 6);
-  height: 1000px;
+
   padding: 20px;
   border-right: solid var(--main-color);
 }
@@ -31,15 +31,11 @@
   border-radius: 30px;
   border: none;
   padding: 12px 0px;
-  /* background-color: #3ea9f0 !important;
-  color: white; */
+  background-color: #3ea9f0 !important;
+  color: white; 
   margin-top: 10px;
   cursor: pointer;
-}
-
-Button.post {
-  background-color: #3ea9f0;
-  color: white;
+  text-align: center;
 }
 
 .user {
@@ -73,3 +69,28 @@ Button.post {
 .user-more {
   align-self: center;
 }
+
+.navbar .account button.follow{
+  display: none;
+  background-color: #3ea9f0;
+}
+
+.user-account{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap:30px;
+  position: fixed;
+  bottom:0;
+  padding-bottom:10px;
+}
+
+.user-account h3{
+  font-size:12px;
+}
+
+.user-account span{
+  font-size:8px;
+}
+

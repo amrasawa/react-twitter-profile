@@ -14,6 +14,7 @@ import NavbarItem from './NavbarItem';
 import Button from './Button';
 import User from './User';
 import { ClassNames } from '@emotion/react';
+import Account from './Accounts';
 //import '../assets/icon.jpeg'
 function Navbar(){
     let srcImg='/icon.jpeg';
@@ -32,9 +33,9 @@ function Navbar(){
                 <NavbarItem icon={<MoreHorizIcon/>} title="More"/>
             </ul>
             <Button className='button post' title="Post"/>
-            <div >
-                <User imgSrc={srcImg} name="AmraSawalha" />
-                <MoreHorizIcon className='user-more'/>
+            <div className='user-account'>
+                <Account  profilePhoto='/icon.jpeg' title='AmraSawalha'/>
+                <MoreHorizIcon/>
             </div>
         </div>
     )
